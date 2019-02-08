@@ -1,0 +1,20 @@
+<mvc:View controllerName="evola.controller.Main"
+          xmlns="sap.m"
+          xmlns:core="sap.ui.core"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:f="sap.f"
+          xmlns:vm="sap.ui.comp.variants"
+          xmlns:form="sap.ui.layout.form"
+          xmlns:l="sap.ui.layout"
+          xmlns:tnt="sap.tnt"
+          height="100%">
+    <Page id="MainPageId"
+          title="{i18n>title}"
+          enableScrolling="false"
+          showHeader="false"
+          showNavButton="true"
+          class="sapUiSizeCompact">
+
+        <content/>
+    </Page>
+</mvc:View>
