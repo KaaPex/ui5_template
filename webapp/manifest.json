@@ -1,7 +1,7 @@
 {
 	"_version": "1.8.0",
 	"sap.app": {
-		"id": "evola.constructor",
+		"id": "ui5template",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -36,13 +36,12 @@
 			"phone": true
 		},
 		"supportedThemes": [
-			"sap_hcb",
-			"sap_bluecrystal"
+			"sap_belize"
 		]
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "evola.view.App",
+			"viewName": "ui5template.view.App",
 			"type": "XML",
 			"id": "idAppControl"
 		},
@@ -51,8 +50,7 @@
 			"libs": {
 				"sap.m": {},
 				"sap.ui.core": {},
-				"sap.ui.layout": {},
-				"sap.gantt": {}
+				"sap.ui.layout": {}
 			}
 		},
 		"contentDensities": {
@@ -63,7 +61,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "evola.i18n.i18n"
+					"bundleName": "ui5template.i18n.i18n"
 				}
 			},
 			"init_data": {
@@ -84,7 +82,7 @@
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"async": true,
-				"viewPath": "evola.view",
+				"viewPath": "ui5template.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
 				"clearControlAggregation": false,
@@ -107,7 +105,7 @@
 		}
 	},
 	"sap.platform.abap": {
-		"uri": "/sap/bc/ui5_ui5/sap/evola_components",
-		"_version": "1.1.0"
+		"uri": "/sap/bc/ui5_ui5/sap/ui5template",
+		"_version": "1.0.0"
 	}
 }

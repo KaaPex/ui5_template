@@ -1,10 +1,15 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
-  "use strict";
+import UI5 from '../decorators/UI5';
+import * as Controller from 'sap/ui/core/mvc/Controller';
 
-  return Controller.extend("evola.controller.App", {
-    onInit: function () {
-      jQuery.sap.log.debug("Init App");
-      
-    }
-  });
-});
+@UI5('ui5template.controller.App')
+class App extends Controller {
+  constructor() {
+    super(arguments);
+  }
+
+  onInit() {
+    jQuery.sap.log.debug('Init App');
+  }
+}
+
+export default App;

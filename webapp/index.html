@@ -6,15 +6,15 @@
   <meta http-equiv="cache-control" content="no-cache" />
   <meta charset="UTF-8" />
 
-  <title>mvideo.axd.taxi</title>
+  <title>Template</title>
 
   <script id="sap-ui-bootstrap"
-          src="resources/sap-ui-core.js"
+          src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
           data-sap-ui-libs="sap.m"
           data-sap-ui-theme="sap_belize_plus"
           data-sap-ui-compatVersion="edge" 
           data-sap-ui-xx-bindingSyntax="complex"
-          data-sap-ui-resourceroots="{&quot;evola&quot;: &quot;./&quot;}">
+          data-sap-ui-resourceroots='{"ui5template": "./"}'>
   </script>
 
   <script>
@@ -26,7 +26,7 @@
       new sap.m.Shell({
         app: new sap.ui.core.ComponentContainer({
           height: "100%",
-          name: "evola"
+          name: "ui5template"
         }),
         appWidthLimited: false
       }).placeAt("content");

@@ -1,15 +1,21 @@
-sap.ui.define(["./Base.controller", "sap/ui/export/Spreadsheet"], function(
-  Controller,
-  Spreadsheet
-) {
-  "use strict";
+import * as Base from './Base.controller';
+import UI5 from '../decorators/UI5';
 
-  return Controller.extend("evola.controller.Main", {
-    onInit: function() {
-      jQuery.sap.log.debug("Init Main");
+@UI5('ui5template.controller.Main')
+class Main extends Base {
+  static get metadata() {
+    return {
+      final: true
+    };
+  }
 
+  constructor() {
+    super(arguments);
+  }
 
-    }
+  onInit() {
+    jQuery.sap.log.debug('Init Main');
+  }
+}
 
-  });
-});
+export default Main;

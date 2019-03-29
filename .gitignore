@@ -6,4 +6,5 @@
 */*.iml
 **/build/
 **/dist/
-package-lock.json
+Component-preloaded.js
+neo-app.json
