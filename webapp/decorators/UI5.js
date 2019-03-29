@@ -17,6 +17,7 @@ export default function UI5(sClassName) {
     let baseClass = Object.getPrototypeOf(target); // it is the same as: baseClass = target.__proto__;
 
     let thisClass = {};
+    thisClass.prototype = null;
     staticMembers.forEach(m => (thisClass[m] = target[m]));
     instanceMethods
       .filter(e => e !== 'constructor')
